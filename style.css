@@ -545,43 +545,42 @@ p {
   #hero {
     position: relative;
     overflow: hidden;
-    height: 100vh; /* Keep the hero section full height */
-    width: 100vw; /* Ensure it doesn't overflow */
+    height: 100vh;
+    width: 100vw;
   }
 
   #hero-video {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%; /* Make sure video covers the viewport width */
-    height: auto; /* Maintain aspect ratio */
     transform: translate(-50%, -50%);
-    z-index: 1;
-    object-fit: cover; /* Cover the container without distortion */
-    max-width: 100vw; /* Prevent overflow */
+    width: 100vw; /* Ensure it fits the viewport width */
+    height: 100vh; /* Make sure it fits the viewport height */
+    object-fit: cover; /* Ensures the video covers without stretching */
   }
 
   .hero-content {
     position: relative;
-    z-index: 2; /* Ensure content appears over the video */
-    padding: 20px; /* Add padding for better spacing */
-    text-align: center; /* Center text on small screens */
-    color: white; /* Ensure text is visible */
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+    color: white;
   }
 
   .hero-content h1 {
-    font-size: 2.5rem; /* Adjust font size for mobile */
-    margin-bottom: 10px; /* Add spacing */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
   }
 
   .cta {
-    font-size: 1.8rem; /* Adjust button for mobile */
-    padding: 10px 20px; /* Adjust padding */
-    margin-top: 20px; /* Add spacing */
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    margin-top: 20px;
   }
 
   body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    max-width: 100vw; /* Constrain the width to the viewport */
   }
 }
 
