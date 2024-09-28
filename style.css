@@ -545,20 +545,20 @@ p {
   #hero {
     position: relative;
     overflow: hidden;
-    height: 100vh; /* Ajuste la hauteur pour occuper tout l'écran */
+    height: 100vh; /* Keep the hero section full height */
+    width: 100vw; /* Ensure it doesn't overflow */
   }
 
   #hero-video {
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    width: 100%; /* Make sure video covers the viewport width */
+    height: auto; /* Maintain aspect ratio */
     transform: translate(-50%, -50%);
     z-index: 1;
-    object-fit: cover; /* Assure que la vidéo couvre bien le conteneur */
+    object-fit: cover; /* Cover the container without distortion */
+    max-width: 100vw; /* Prevent overflow */
   }
 
   .hero-content {
@@ -570,16 +570,21 @@ p {
   }
 
   .hero-content h1 {
-    font-size: 2.5rem; /* Ajuster la taille de la police pour mobile */
-    margin-bottom: 10px; /* Ajouter de l'espacement */
+    font-size: 2.5rem; /* Adjust font size for mobile */
+    margin-bottom: 10px; /* Add spacing */
   }
 
   .cta {
-    font-size: 1.8rem; /* Adapter le bouton pour mobile */
-    padding: 10px 20px; /* Ajuster le padding pour une meilleure visibilité */
-    margin-top: 20px; /* Ajouter de l'espacement */
+    font-size: 1.8rem; /* Adjust button for mobile */
+    padding: 10px 20px; /* Adjust padding */
+    margin-top: 20px; /* Add spacing */
+  }
+
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
 }
+
 
 	/* Services Section */
 #services {
