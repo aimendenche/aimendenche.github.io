@@ -619,7 +619,7 @@ p {
 	#about .col-left {
 		width: 600px;
 		height: 400px;
-		padding-left: 60px;
+		padding-left: 61px;
 	}
 	#about .about .col-left .about-img::after {
 		left: -45px;
