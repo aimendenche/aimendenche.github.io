@@ -541,39 +541,45 @@ p {
 }
 /* End Keyframes */
 
-/* Media Query For Tablet */
-@media only screen and (min-width: 768px) {
-	.cta {
-		font-size: 2.5rem;
-		padding: 20px 60px;
-	}
-	h1.section-title {
-		font-size: 6rem;
-	}
+@media only screen and (max-width: 767px) {
+  #hero {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Ajuste la hauteur pour occuper tout l'écran */
+  }
 
-#hero {
-  position: relative;
-  overflow: hidden;
+  #hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    object-fit: cover; /* Assure que la vidéo couvre bien le conteneur */
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2; /* Ensure content appears over the video */
+    padding: 20px; /* Add padding for better spacing */
+    text-align: center; /* Center text on small screens */
+    color: white; /* Ensure text is visible */
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem; /* Ajuster la taille de la police pour mobile */
+    margin-bottom: 10px; /* Ajouter de l'espacement */
+  }
+
+  .cta {
+    font-size: 1.8rem; /* Adapter le bouton pour mobile */
+    padding: 10px 20px; /* Ajuster le padding pour une meilleure visibilité */
+    margin-top: 20px; /* Ajouter de l'espacement */
+  }
 }
-
-#hero-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2; /* Ensure content appears over the video */
-  color: white; /* Adjust color as needed */
-}
-
 
 	/* Services Section */
 #services {
