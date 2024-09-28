@@ -551,7 +551,11 @@ p {
 		font-size: 6rem;
 	}
 
-
+	/* Hero */
+	#hero h1 {
+		font-size: 7rem;
+	}
+	/* End Hero */
 
 	/* Services Section */
 #services {
