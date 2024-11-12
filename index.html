@@ -23,221 +23,127 @@
             <div class="bar"></div>
           </div>
           <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Service">Services</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#achievements">Réalisations</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-  <!-- End Header -->
 
-
- <!-- Hero Section -->
-<section id="hero">
-  <div class="hero container">
-    <!-- Video Background -->
-    <video autoplay muted loop id="hero-video">
-      <source src="./img/vi.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-    <!-- Hero Content -->
-    <div class="hero-content">
-      <h1>Hello, <span></span></h1>
-      <h1>My Name is <span></span></h1>
-      <h1>AIMEN<span></span></h1>
-      <a href="#projects" type="button" class="cta">Portfolio</a>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero container">
+      <div class="hero-content">
+        <h1>Transforming Data into Insights.</h1>
+        <h2>DataOps Engineer: Automating Data Pipelines and Ensuring Data Quality.</h2>
+        <a href="#projects" class="cta">Portfolio</a>
+      </div>
     </div>
-  </div>
-</section>
-<!-- End Hero Section -->
+  </section>
 
-
-  <!-- Service Section -->
+  <!-- Services Section -->
   <section id="services">
     <div class="services container">
       <div class="service-top">
         <h1 class="section-title">Serv<span>i</span>ces</h1>
-        <p>I provide comprehensive data solutions focused on automating workflows, ensuring seamless data transformation, and maintaining high data quality. With an emphasis on secure data handling, my services cover everything from data integration to governance, enabling accurate, reliable, and scalable insights. By automating processes and securing data flows, I help businesses achieve operational efficiency and make informed decisions confidently</p>
+        <p>I provide comprehensive data solutions focused on automating workflows, ensuring seamless data transformation, and maintaining high data quality.</p>
       </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/ios-filled/100/000000/data-configuration.png" alt="Data Quality Icon" /></div>
-          <h2>Data Quality & Integrity Management  </h2>
-          <p></p>
+    </div>
+  </section>
+
+  <!-- Réalisations Section -->
+  <section id="achievements">
+    <div class="achievements container">
+      <h1 class="section-title">Mes <span>Réalisations</span></h1>
+      <ul>
+        <li>Déploiement d'une plateforme de métadonnées sécurisée avec OpenMetadata.</li>
+        <li>Automatisation de pipelines ETL avec Apache NiFi et Apache Spark.</li>
+        <li>Intégration de solutions d'authentification SSO et OAuth.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Compétences Section -->
+  <section id="skills">
+    <div class="skills container">
+      <h1 class="section-title">Compétences</h1>
+      <div class="skills-content">
+        <div class="technical-skills">
+          <h2>Compétences Techniques</h2>
+          <ul>
+            <li>Data Engineering: Apache Spark, MinIO, PostgreSQL</li>
+            <li>Automation: Apache NiFi, Airflow</li>
+            <li>Backend Development: Flask, Python, API sécurisées</li>
+          </ul>
         </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/ios-filled/100/000000/lock-2.png" alt="Secure Data Icon" /></div>
-          <h2>Data Governance & Secure Access Control</h2>
-          <p>.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/ios-filled/100/000000/settings.png" alt="Automation Icon" /></div>
-          <h2>Automated Data Pipelines & Infrastructure Deployment</h2>
-          <p></p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/ios-filled/100/000000/key.png" alt="Authentication Icon" />
-</div>
-          <h2>Secure Data Platforms & Authentication Solutions</h2>
-          <p></p>
+        <div class="soft-skills">
+          <h2>Compétences Humaines</h2>
+          <ul>
+            <li>Leadership et gestion de projet</li>
+            <li>Communication efficace</li>
+            <li>Résolution de problèmes complexes</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
-  <!-- End Service Section -->
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 1</h1>
-            <h2>Data Quality and Transformation Pipeline</h2>
-            <p>This project uses Apache Spark and MinIO to build a data pipeline that processes, cleans, and validates JSON data. It incorporates data quality checks (null values, data types, column format) and updates metadata details while ensuring secure data handling between storage and transformation processes​</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/data1.jpeg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 2</h1>
-            <h2>Smart Chat Interface</h2>
-            <p>A chatbot developed using Flask for the backend and HTML, CSS, and JavaScript for the frontend. It leverages an external API for generating responses, with a focus on clean design, responsive user interaction, and secure handling of environment variables for API integration​</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/data1.jpeg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 3</h1>
-            <h2>Secure On-Premise Metadata Ingestion</h2>
-            <p>Demonstrates the use of OpenMetadata for secure, on-premise data cataloging with connectors for PostgreSQL and Hive. The focus is on privacy and on-site data security, ensuring that metadata ingestion is fully controlled within a private infrastructure, without reliance on external services</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/data1.jpeg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 4</h1>
-            <h2>AI Revolution Analysis</h2>
-            <p>A project analyzing AI job salary data, with the goal of visualizing and monitoring trends using Elasticsearch and Kibana. It includes data cleaning, standardization, and indexing in Elasticsearch for visual analytics and trend monitoring in the AI job market</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/data1.jpeg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 5</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/data1.jpeg" alt="img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/aimen.png" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>DataOps Engineer</h2>
-        <p>Ingénieur Data avec 1,5 an d'expérience, spécialisé dans le Big Data et passionné par les technologies de traitement des données massives. J'ai mené des projets d'installation et de configuration d'outils de gestion de données, en optimisant l'intégration et le suivi des flux de données. Toujours en quête de nouveaux défis, je souhaite contribuer à des projets innovants dans le développement et l'optimisation de plateformes de données. Motivé par la résolution de problèmes complexes, je suis prêt à relever de nouvelles opportunités.!</p>
-        <a href="aimen-denche-vf.pdf" class="cta">Download Resume</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
-
-  <!-- Contact Section -->
-
+  <!-- Contact Section (Formulaire) -->
   <section id="contact">
-  <div class="contact container">
-    <div>
-      <h1 class="section-title">Let’s Connect & Build Something Great Together! 🚀</h1>
+    <div class="contact container">
+      <h1 class="section-title">Contactez-moi</h1>
+      <form id="contactForm">
+        <div class="form-group">
+          <input type="text" id="firstName" placeholder="Prénom" required>
+          <input type="text" id="lastName" placeholder="Nom" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="tel" id="phone" placeholder="Numéro de téléphone" required>
+        </div>
+        <div class="form-group">
+          <input type="text" id="subject" placeholder="Sujet" required>
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder="Votre message..." required></textarea>
+        </div>
+        <button type="submit" class="cta">Envoyer</button>
+      </form>
     </div>
-    <div class="contact-items">
-      <!-- Phone Section -->
-      <div class="contact-item">
-        <div class="icon"><img src="https://img.icons8.com/ios-filled/100/000000/phone.png" /></div>
-        <div class="contact-info">
-          <h1>Phone</h1>
-          <h2><a href="tel:+33619785789">+33 619 78 57 89</a></h2>
-        </div>
-      </div>
-      <!-- Email Section -->
-      <div class="contact-item">
-        <div class="icon"><img src="https://img.icons8.com/ios-filled/100/000000/new-post.png" /></div>
-        <div class="contact-info">
-          <h1>Email</h1>
-          <h2><a href="mailto:aimen.denche18@gmail.com">aimen.denche18@gmail.com</a></h2>
-        </div>
-      </div>
-      <!-- LinkedIn Section -->
-      <div class="contact-item">
-        <div class="icon"><img src="https://img.icons8.com/ios-filled/100/0077b5/linkedin.png" /></div>
-        <div class="contact-info">
-          <h1>LinkedIn</h1>
-          <h2><a href="https://www.linkedin.com/in/aimen-denche/" target="_blank">My LinkedIn Profile</a></h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- End Contact Section -->
+  </section>
 
   <!-- Footer -->
-<section id="footer">
-  <div class="footer container">
-    <div class="brand">
-      <h1><span>A</span>IMEN <span>D</span>ENCHE</h1>
-    </div>
-    <h2>Aimen Denche - Empowering DataOps for Seamless Data Management Solutions</h2>
-    <div class="social-icon">
-      <div class="social-item">
-        <a href="https://www.instagram.com/aimendenche/" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="50" />
-        </a>
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1>AIMEN <span>D</span>ENCHE</h1>
       </div>
-      <div class="social-item">
-        <a href="https://github.com/aimendenche" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="50" />
-        </a>
-      </div>
+      <p>&copy; 2024 Aimen Denche. Tous droits réservés.</p>
     </div>
-    <p>&copy; 2024 Aimen Denche. All rights reserved. |
-  <a href="https://www.termsfeed.com/live/efb9ce4d-5c54-4e5a-ae94-bcbeaac24390" target="_blank">Privacy Policy</a> |
-  <a href="https://www.termsfeed.com/live/444e78ec-1376-48c1-9449-4e67e5eef1bb" target="_blank">Terms of Service</a>
-</p>
-  </div>
-</section>
+  </section>
 
-  <!-- End Footer -->
-  <script src="./app.js"></script>
+  <!-- JavaScript pour le formulaire de contact -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+
+      const mailtoLink = `mailto:aimen.denche18@gmail.com?subject=${encodeURIComponent(subject)}&body=Nom: ${firstName} ${lastName}%0D%0AEmail: ${email}%0D%0ATéléphone: ${phone}%0D%0AMessage: ${encodeURIComponent(message)}`;
+
+      window.location.href = mailtoLink;
+    });
+  </script>
 </body>
 
 </html>
