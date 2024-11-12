@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>My Website</title>
+  <title>Portfolio - Aimen Denche</title>
 </head>
 
 <body>
@@ -23,80 +23,191 @@
             <div class="bar"></div>
           </div>
           <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#achievements">Réalisations</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Services</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#skills" data-after="Skills">Skills</a></li>
+            <li><a href="#achievements" data-after="Achievements">Achievements</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
+  <!-- End Header -->
 
   <!-- Hero Section -->
   <section id="hero">
     <div class="hero container">
       <div class="hero-content">
-        <h1>Transforming Data into Insights.</h1>
-        <h2>DataOps Engineer: Automating Data Pipelines and Ensuring Data Quality.</h2>
-        <a href="#projects" class="cta">Portfolio</a>
+        <h1>Hey, I’m Aimen.</h1>
+        <h2>Data Engineer based in Paris, France. I specialize in transforming, securing, and governing data to deliver intelligent solutions that drive business growth and efficiency.</h2>
+        <a href="#projects" type="button" class="cta">Explore My Work</a>
       </div>
     </div>
   </section>
-
-  <!-- Services Section -->
+  <!-- End Hero Section -->
+  <!-- Service Section -->
   <section id="services">
     <div class="services container">
       <div class="service-top">
         <h1 class="section-title">Serv<span>i</span>ces</h1>
-        <p>I provide comprehensive data solutions focused on automating workflows, ensuring seamless data transformation, and maintaining high data quality.</p>
+        <p>I provide comprehensive data solutions focused on automating workflows, ensuring seamless data transformation, and maintaining high data quality. With an emphasis on secure data handling, my services cover everything from data integration to governance, enabling accurate, reliable, and scalable insights. By automating processes and securing data flows, I help businesses achieve operational efficiency and make informed decisions confidently.</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/ios-filled/100/000000/data-configuration.png" alt="Data Quality Icon" /></div>
+          <h2>Data Quality & Integrity Management</h2>
+          <p>Ensure your data is accurate, consistent, and reliable through rigorous data quality checks and integrity management processes.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/ios-filled/100/000000/lock-2.png" alt="Secure Data Icon" /></div>
+          <h2>Data Governance & Secure Access Control</h2>
+          <p>Implement robust data governance frameworks and secure access control to protect your sensitive information.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/ios-filled/100/000000/settings.png" alt="Automation Icon" /></div>
+          <h2>Automated Data Pipelines & Infrastructure Deployment</h2>
+          <p>Streamline your data workflows with automated pipelines and scalable infrastructure deployment solutions.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/ios-filled/100/000000/key.png" alt="Authentication Icon" /></div>
+          <h2>Secure Data Platforms & Authentication Solutions</h2>
+          <p>Design and implement secure data platforms with advanced authentication mechanisms for enhanced data protection.</p>
+        </div>
       </div>
     </div>
   </section>
+  <!-- End Service Section -->
 
-  <!-- Réalisations Section -->
-  <section id="achievements">
-    <div class="achievements container">
-      <h1 class="section-title">Mes <span>Réalisations</span></h1>
-      <ul>
-        <li>Déploiement d'une plateforme de métadonnées sécurisée avec OpenMetadata.</li>
-        <li>Automatisation de pipelines ETL avec Apache NiFi et Apache Spark.</li>
-        <li>Intégration de solutions d'authentification SSO et OAuth.</li>
-      </ul>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 1</h1>
+            <h2>Data Quality and Transformation Pipeline</h2>
+            <p>This project uses Apache Spark and MinIO to build a data pipeline that processes, cleans, and validates JSON data. It includes data quality checks (null values, data types, column format) and updates metadata details while ensuring secure data handling.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/data1.jpeg" alt="Data Pipeline Project Image">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 2</h1>
+            <h2>Smart Chat Interface</h2>
+            <p>A chatbot developed using Flask for the backend and HTML, CSS, and JavaScript for the frontend. It leverages an external API for generating responses, with a focus on clean design and secure handling of environment variables.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/data1.jpeg" alt="Chat Interface Project Image">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 3</h1>
+            <h2>Secure On-Premise Metadata Ingestion</h2>
+            <p>Demonstrates the use of OpenMetadata for secure, on-premise data cataloging with connectors for PostgreSQL and Hive, ensuring privacy and on-site data security without reliance on external services.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/data1.jpeg" alt="Metadata Ingestion Project Image">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 4</h1>
+            <h2>AI Revolution Analysis</h2>
+            <p>A project analyzing AI job salary data, using Elasticsearch and Kibana for visual analytics and trend monitoring in the AI job market.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/data1.jpeg" alt="AI Analysis Project Image">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 5</h1>
+            <h2>Coding is Love</h2>
+            <p>An exploration of coding best practices and creative problem-solving in software development.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/data1.jpeg" alt="Coding Project Image">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+  <!-- End Projects Section -->
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/aimen.png" alt="Aimen Denche Photo">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>DataOps Engineer</h2>
+        <p>Ingénieur Data avec plus de 1,5 an d'expérience, spécialisé dans le Big Data et passionné par les technologies de traitement des données massives. J'ai mené des projets d'installation et de configuration d'outils de gestion de données, en optimisant l'intégration et le suivi des flux de données. Toujours en quête de nouveaux défis, je souhaite contribuer à des projets innovants dans le développement et l'optimisation de plateformes de données. Motivé par la résolution de problèmes complexes, je suis prêt à relever de nouvelles opportunités.</p>
+        <a href="aimen-denche-vf.pdf" class="cta">Download Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
 
   <!-- Compétences Section -->
   <section id="skills">
     <div class="skills container">
       <h1 class="section-title">Compétences</h1>
       <div class="skills-content">
+        <!-- Compétences Techniques -->
         <div class="technical-skills">
           <h2>Compétences Techniques</h2>
           <ul>
-            <li>Data Engineering: Apache Spark, MinIO, PostgreSQL</li>
-            <li>Automation: Apache NiFi, Airflow</li>
-            <li>Backend Development: Flask, Python, API sécurisées</li>
+            <li>Data Engineering : Apache Spark, MinIO, PostgreSQL</li>
+            <li>Automation : Apache NiFi, Airflow</li>
+            <li>Backend Development : Flask, Python, API sécurisées</li>
+            <li>Cloud & Infrastructure : AWS, Docker, Kubernetes</li>
           </ul>
         </div>
+        <!-- Compétences Humaines -->
         <div class="soft-skills">
           <h2>Compétences Humaines</h2>
           <ul>
             <li>Leadership et gestion de projet</li>
-            <li>Communication efficace</li>
+            <li>Communication efficace et travail d'équipe</li>
             <li>Résolution de problèmes complexes</li>
+            <li>Adaptabilité et apprentissage continu</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
+  <!-- End Compétences Section -->
 
-  <!-- Contact Section (Formulaire) -->
+  <!-- Réalisations Section -->
+  <section id="achievements">
+    <div class="achievements container">
+      <h1 class="section-title">Mes <span>Réalisations</span></h1>
+      <ul>
+        <li>Déploiement d'une plateforme de métadonnées sécurisée avec OpenMetadata, améliorant la visibilité des données pour les entreprises.</li>
+        <li>Automatisation de pipelines ETL complexes avec Apache NiFi, réduisant le temps de traitement des données de 50 %.</li>
+        <li>Intégration de solutions d'authentification OAuth et SSO pour des clients du secteur bancaire, renforçant la sécurité des accès.</li>
+        <li>Optimisation des flux de données avec Apache Spark pour une analyse rapide et des insights en temps réel.</li>
+      </ul>
+    </div>
+  </section>
+  <!-- End Réalisations Section -->
+
+  <!-- Contact Section -->
   <section id="contact">
     <div class="contact container">
-      <h1 class="section-title">Contactez-moi</h1>
+      <h1 class="section-title">Let’s Connect & Build Something Great Together! 🚀</h1>
       <form id="contactForm">
         <div class="form-group">
           <input type="text" id="firstName" placeholder="Prénom" required>
@@ -116,19 +227,32 @@
       </form>
     </div>
   </section>
+  <!-- End Contact Section -->
 
   <!-- Footer -->
   <section id="footer">
     <div class="footer container">
       <div class="brand">
-        <h1>AIMEN <span>D</span>ENCHE</h1>
+        <h1><span>A</span>IMEN <span>D</span>ENCHE</h1>
       </div>
-      <p>&copy; 2024 Aimen Denche. Tous droits réservés.</p>
+      <h2>Aimen Denche - Empowering DataOps for Seamless Data Management Solutions</h2>
+      <div class="social-icon">
+        <a href="https://www.instagram.com/aimendenche/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="50">
+        </a>
+        <a href="https://github.com/aimendenche" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="50">
+        </a>
+      </div>
+      <p>&copy; 2024 Aimen Denche. All rights reserved. | 
+        <a href="https://www.termsfeed.com/live/efb9ce4d-5c54-4e5a-ae94-bcbeaac24390" target="_blank">Privacy Policy</a> | 
+        <a href="https://www.termsfeed.com/live/444e78ec-1376-48c1-9449-4e67e5eef1bb" target="_blank">Terms of Service</a>
+      </p>
     </div>
   </section>
-
-  <!-- JavaScript pour le formulaire de contact -->
+<!-- JavaScript pour le formulaire de contact -->
   <script>
+    // Gestion de l'envoi du formulaire
     document.getElementById('contactForm').addEventListener('submit', function (e) {
       e.preventDefault();
 
@@ -139,11 +263,30 @@
       const subject = document.getElementById('subject').value;
       const message = document.getElementById('message').value;
 
-      const mailtoLink = `mailto:aimen.denche18@gmail.com?subject=${encodeURIComponent(subject)}&body=Nom: ${firstName} ${lastName}%0D%0AEmail: ${email}%0D%0ATéléphone: ${phone}%0D%0AMessage: ${encodeURIComponent(message)}`;
+      // Création du lien mailto pour envoyer les informations
+      const mailtoLink = `mailto:aimen.denche18@gmail.com?subject=${encodeURIComponent(subject)}&body=
+        Nom: ${firstName} ${lastName}%0D%0A
+        Email: ${email}%0D%0A
+        Téléphone: ${phone}%0D%0A
+        Message: ${encodeURIComponent(message)}`;
 
+      // Redirection vers le lien mailto
       window.location.href = mailtoLink;
     });
   </script>
+
+  <!-- Script pour la navigation responsive -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navList = document.querySelector('.nav-list');
+
+    hamburger.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+
+  <!-- Inclusion du fichier app.js pour des fonctionnalités supplémentaires -->
+  <script src="./app.js"></script>
 </body>
 
 </html>
